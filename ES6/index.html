@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P><input type="number" value="0" id=""></P>
+    <P><input type="number" value="0" id=""></P>
+    <P><input type="number" value="0" id=""></P>
+    <P><input type="number" value="0" id=""></P>
+    <P><input type="number" value="0" id=""></P>
+    <P><input type="number" value="0" id=""></P>
+    <P><input type="number" value="0" id=""></P>
+    <P><input type="number" value="0" id=""></P>
+    <P><input type="number" value="0" id=""></P>
+    <P><input type="number" value="0" id=""></P>
+    <p><button onclick="getValues()">计算</button></p>
+    <div id="max"></div>
+    <div id="min"></div>
+</body>
+<script>
+    const obj = {
+        a
+    }
+    function getValues(){
+        const inps =  document.querySelectorAll("input")
+        const inpArr = []
+        inps.forEach(ele=>{
+            inpArr.push(ele.value)
+        })
+        return  getMaxMin(...inpArr)
+    }
+
+    function getMaxMin(...agrs){
+        return {
+            max : Math.max(...agrs),
+            min : Math.min(...agrs)
+        }
+    }
+    
+
+</script>
+
+</html>
